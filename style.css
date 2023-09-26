@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Work Sans;
+}
+/* Nav Bar */
+nav{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.nave-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nave-logo img{
+    width: 81%;
+    height: 2.5rem;
+}
+
+.nave-logo .logo-text{
+    color: #0B0223;
+    font-size: 2.81rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 1.0rem;
+}
+.nave-logo .logo-text span{
+    color: #FF42A5;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 1rem;
+    list-style: none;
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: #3C354F;
+   text-align: center;
+   font-size: 1.1rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+}
+nav ul li a:hover{
+    color: #4c475c;
+}
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    cursor: pointer;
+}
+
+.nav-btn a{
+    padding: 0rem .50rem;
+}
+.nav-btn .fa-youtube{
+    color: #F61C0D;
+}
+/* Banner part */
+.banner{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.banner-left{
+
+    margin: 0 auto;
+    /* background-image: url('/Gamer/images/Group\ 14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: lightblue; */
+
+}
+
+.banner-title{
+    color: #0B0223;
+text-align: center;
+font-family: Work Sans;
+font-size: 3rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.banner-sub-title {
+text-align: center;
+font-family: Work Sans;
+font-size: 5.92rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.banner-btn button{
+display: inline-flex;
+padding: 1.29rem 2.45rem;
+align-items: flex-start;
+gap: .62rem;
+border-radius: 3rem;
+border: none;
+
+color: #FFF;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+margin-top: 1.50rem;
+cursor: pointer;
+
+}
+.Sign-btn{
+background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+}
+.Rogue-btn{
+    background: #4EC5F7;
+    margin-left: 2rem;
+}
+.banner-title-list li{
+    list-style: none;
+    padding: .35rem 0;
+    color: #534C64;
+    font-size: 1.20rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.banner-title-list li i{
+    padding-right: 0.30rem;
+    font-size: 1rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.banner-right img{
+    width: 80%;
+}
+
+/* Moblie view */
+@media screen and (max-width: 576px){
+
+    nav{
+        flex-direction: column;
+        padding: 1.3rem 0;
+        box-shadow: none;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        padding: 1rem 0;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-right img{
+        width: 100%;
+    }
+}
+/* Tablet View */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav{
+        flex-direction: column;
+        padding: 1.3rem 0;
+        box-shadow: none;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        padding: 1rem 0;
+    }
+}
